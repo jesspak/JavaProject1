@@ -5,26 +5,23 @@
  * @author JessicaPak
  *
  */
-public class Song {
+public class Song extends Media{
 	private String songArtist;
 	private String songTitle;
 	private String songGenre;
-	private String songFormat;
-	private String songLocation;
-	private String songNotes;
 	
 	/**
 	 * default constructor
 	 */
 	public Song(){
-		
+		super();
 	}
 	/**
 	 * parameterized constructor
 	 */
 	public Song(String newSongArtist, String newSongTitle, String newSongGenre,
 			String newSongFormat, String newSongLocation, String newSongNotes){
-		
+		super();
 	}
 	/**
 	 * returns the current value of songArtist
@@ -44,71 +41,31 @@ public class Song {
 	public String getSongGenre(){
 		return songGenre;
 	}
-	/**
-	 * returns the current value of songFormat
-	 */
-	public String getSongFormat(){
-		return songFormat;
-	}
-	/**
-	 * returns the current value of songLocation
-	 */
-	public String getSongLocation(){
-		return songLocation;
-	}
-	/**
-	 * returns the current value of songNotes
-	 */
-	public String getSongNotes(){
-		return songNotes;
-	}
+	
 	/**
 	 * sets the value of songArtist to newSongArtist
 	 * @param newSongArtist
 	 */
 	public void setSongArtist(String newSongArtist){
-		
+		songArtist = "Song Artist";
 	}
 	/**
 	 * sets the value of songTitle to newSongTitle
 	 * @param newSongTitle
 	 */
 	public void setSongTitle(String newSongTitle){
-		
+		songTitle = "Song Title";
 	}
 	/**
 	 * sets the value of songGenre to newSongGenre
 	 * @param newSongGenre
 	 */
 	public void setSongGenre(String newSongGenre){
-		
+		songGenre = "Song Genre";
 	}
-	/**
-	 * sets the value of songFormat to newSongFormat
-	 * @param newSongFormat
-	 */
-	public void setSongFormat(String newSongFormat){
-		
-	}
-	/**
-	 * sets the value of songLocation to newSongLocation
-	 * @param newSongLocation
-	 */
-	public void setSongLocation(String newSongLocation){
 	
-	}
-	/**
-	 * sets the value of songNotes to newSongNotes
-	 * @param newSongNotes
-	 */
-	public void setSongNotes(String newSongNotes){
-		
-	}
-	/**
-	 * Returns a String containing all the data stored 
-	 * in this object.
-	 */
 	public String toString(){
-		return null;
+		return super.toString() + "\n" + this.getSongArtist() + "\n" + this.getSongTitle() + "\n"
+				+ this.getSongGenre();
 	}
 }

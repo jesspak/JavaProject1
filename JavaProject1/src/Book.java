@@ -5,19 +5,17 @@
  * @author JessicaPak
  *
  */
-public class Book {
+public class Book extends Media {
 
 	private String bookAuthor; 
 	private String bookTitle;
-	private String bookFormat;
-	private String bookLocation;
-	private String bookNotes;
+
 	
 	/**
 	 * default constructor
 	 */
 	public Book(){
-		
+		super();
 	}
 	/**
 	 * parameterized constructor
@@ -29,7 +27,7 @@ public class Book {
 	 */
 	public Book(String newBookAuthor, String newBookTitle, 
 			String newBookFormat, String newBookLocation, String newBookNotes){
-		
+		super();
 	}
 	/**
 	 * returns the current value of bookAuthor
@@ -43,65 +41,29 @@ public class Book {
 	public String getBookTitle(){
 		return bookTitle;
 	}
-	/**
-	 * returns the current value of bookFormat
-	 */
-	public String getBookFormat(){
-		return bookFormat;
-	}
-	/**
-	 * returns the current value of bookLocation
-	 */
-	public String getBookLocation(){
-		return bookLocation;
-	}
-	/**
-	 * returns the current value of bookNotes
-	 */
-	public String getBookNotes(){
-		return bookNotes;
-	}
+	
 	/**
 	 * sets the value of bookAuthor to newBookAuthor
 	 * @param newBookAuthor
 	 */
 	public void setBookAuthor(String newBookAuthor){
-		
+		bookAuthor = "Book Author";
 	}
 	/**
 	 * sets the value of bookTitle to newBookTitle
 	 * @param newBookTitle
 	 */
 	public void setBookTitle(String newBookTitle){
-		
+		bookTitle = "Book Title";
 	}
-	/**
-	 * sets the value of bookFormat to newBookFormat
-	 * @param newBookFormat
-	 */
-	public void setBookFormat(String newBookFormat){
-		
-	}
-	/**
-	 * sets the value of bookLocation to newBookLocation
-	 * @param newBookLocation
-	 */
-	public void setBookLocation(String newBookLocation){
 	
-	}
-	/**
-	 * sets the value of bookNotes to newBookNotes
-	 * @param newBookNotes
-	 */
-	public void setBookNotes(String newBookNotes){
-		
-	}
 	/**
 	 * Returns a String containing all the data stored 
 	 * in this object.
 	 */
 	public String toString(){
-		return null;
+		return super.toString() + "\n" + this.getBookAuthor() + "\n"
+				+ this.getBookTitle();
 	}
 	
 }

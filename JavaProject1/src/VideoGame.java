@@ -5,24 +5,22 @@
  * @author JessicaPak
  *
  */
-public class VideoGame {
+public class VideoGame extends Media{
 	private String videoGameTitle;
-	private String videoGameFormat;
-	private String videoGameLocation;
-	private String videoGameNotes;
+
 	
 	/**
 	 * default constructor
 	 */
 	public VideoGame(){
-		
+		super();
 	}
 	/**
 	 * parameterized constructor
 	 */
 	public VideoGame(String newVideoGameTitle, String newVideoGameFormat,
 			String newVideoGameLocation, String newVideoGameNotes){
-		
+		super();
 	}
 	/**
 	 * returns the current value of videoGameTitle
@@ -30,57 +28,20 @@ public class VideoGame {
 	public String getVideoGameTitle(){
 		return videoGameTitle;
 	}
-	/**
-	 * returns the current value of videoGameFormat
-	 */
-	public String getVideoGameFormat(){
-		return videoGameFormat;
-	}
-	/**
-	 * returns the current value of videoGameLocation
-	 */
-	public String getVideoGameLocation(){
-		return videoGameLocation;
-	}
-	/**
-	 * returns the current value of videoGameNotes
-	 */
-	public String getVideoGameNotes(){
-		return videoGameNotes;
-	}
+	
 	/**
 	 * sets the value of videoGameTitle to newVideoGameTitle
 	 * @param newVideoGameTitle
 	 */
 	public void setVideoGameTitle(String newVideoGameTitle){
-		
+		videoGameTitle = "Video Game Title";
 	}
-	/**
-	 * sets the value of videoGameFormat to newVideoGameFormat
-	 * @param newVideoGameFormat
-	 */
-	public void setVideoGameFormat(String newVideoGameFormat){
-		
-	}
-	/**
-	 * sets the value of videoGameLocation to newVideoGameLocation
-	 * @param newVideoGameLocation
-	 */
-	public void setVideoGameLocation(String newVideoGameLocation){
-	
-	}
-	/**
-	 * sets the value of videoGameNotes to newVideoGameNotes
-	 * @param newVideoGameNotes
-	 */
-	public void setVideoGameNotes(String newVideoGameNotes){
-		
-	}
+
 	/**
 	 * Returns a String containing all the data stored 
 	 * in this object.
 	 */
 	public String toString(){
-		return null;
+		return super.toString() + "\n" + this.getVideoGameTitle();
 	}
 }

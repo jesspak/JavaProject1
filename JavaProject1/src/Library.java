@@ -1,12 +1,21 @@
+
 /**
  * one object of this class creates a library and has methods 
  * that adds, prints, deletes, and retrieves the data.
  */
 public class Library {
+	private static final int LISTSIZE = 1000;
+	private Library[] library;
 	/**
 	 * default constructor
 	 */
 	public Library(){
+		
+	}
+	/**
+	 * adds a media type to the library
+	 */
+	public void add(){
 		
 	}
 	/**
