@@ -60,9 +60,7 @@ public class Video extends Media{
 	 * in this object.
 	 */
 	public String toString(){
-		return super.toString() + this.getVideoTitle() + this.getVideoStar();
-	}
-	
-	
+		return this.getVideoTitle() + "\n" + this.getVideoStar() + "\n" + super.toString();
+	}	
 }
 

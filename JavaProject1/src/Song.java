@@ -63,9 +63,12 @@ public class Song extends Media{
 	public void setSongGenre(String newSongGenre){
 		songGenre = "Song Genre";
 	}
-	
+	/**
+	 * Returns a String containing all the data stored 
+	 * in this object.
+	 */
 	public String toString(){
-		return super.toString() + "\n" + this.getSongArtist() + "\n" + this.getSongTitle() + "\n"
-				+ this.getSongGenre();
+		return this.getSongArtist() + "\n" + this.getSongTitle() + "\n"
+				+ this.getSongGenre() + "\n" + super.toString();
 	}
 }

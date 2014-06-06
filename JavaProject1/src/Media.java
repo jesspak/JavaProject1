@@ -1,13 +1,30 @@
-
+/**
+ * One object of class Media stores a list of the various
+ * media types.
+ * @author JessicaPak
+ *
+ */
 public class Media {
 	private String format;
 	private String location;
 	private String notes;
-	
+	/**
+	 * default constructor
+	 */
 	public Media(){
 		format = "Format";
 		location = "Location";
 		notes = "Notes";
+	}
+	/**
+	 * parameterized constructor
+	 * @param newFormat
+	 * @param newLocation
+	 * @param newNotes
+	 */
+	public Media(String newFormat, 
+			String newLocation, String newNotes){
+		
 	}
 	/**
 	 * returns the current value of bookFormat
@@ -27,7 +44,6 @@ public class Media {
 	public String getNotes(){
 		return notes;
 	}
-	
 	/**
 	 * sets the value of bookFormat to newBookFormat
 	 * @param newBookFormat
@@ -49,8 +65,12 @@ public class Media {
 	public void setNotes(String newBookNotes){
 		notes = "Notes";
 	}
-	
+	/**
+	 * Returns a String containing all the data stored 
+	 * in this object.
+	 */
 	public String toString(){
-		return this.getFormat() + "\n" + this.getLocation() + "\n" + this.getNotes();
+		return this.getFormat() + "\n" + this.getLocation()
+				+ "\n" + this.getNotes() + "\n";
 	}
 }

@@ -9,8 +9,6 @@ public class Book extends Media {
 
 	private String bookAuthor; 
 	private String bookTitle;
-
-	
 	/**
 	 * default constructor
 	 */
@@ -40,8 +38,7 @@ public class Book extends Media {
 	 */
 	public String getBookTitle(){
 		return bookTitle;
-	}
-	
+	}	
 	/**
 	 * sets the value of bookAuthor to newBookAuthor
 	 * @param newBookAuthor
@@ -62,8 +59,8 @@ public class Book extends Media {
 	 * in this object.
 	 */
 	public String toString(){
-		return super.toString() + "\n" + this.getBookAuthor() + "\n"
-				+ this.getBookTitle();
+		return this.getBookAuthor() + "\n"
+				+ this.getBookTitle() + "\n" + super.toString();
 	}
 	
 }

@@ -1,5 +1,6 @@
 /**
- * 
+ * The creates a Media list and adds, deletes, change, and search 
+ * the various media types stored in the list.
  * @author JessicaPak
  *
  */

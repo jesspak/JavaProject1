@@ -42,6 +42,6 @@ public class VideoGame extends Media{
 	 * in this object.
 	 */
 	public String toString(){
-		return super.toString() + "\n" + this.getVideoGameTitle();
+		return this.getVideoGameTitle() + "\n" + super.toString();
 	}
 }
