@@ -22,8 +22,16 @@ public class Media {
 	 * @param newLocation
 	 * @param newNotes
 	 */
-	public Media(String newFormat, 
-			String newLocation, String newNotes){
+	public Media(String format, 
+			String location, String notes){
+				/**
+				 * Just cleaned up the code by using the same variables names so I can use "this."
+				 * @TB
+				*/
+				
+		format = this.format;
+		location = this.location;
+		notes = this.notes;
 		
 	}
 	/**
